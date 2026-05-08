@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Patinhas Felizes - Pet shop com banho, tosa, veterinário e produtos para o seu pet.">
+    <meta name="author" content="Patinhas Felizes">
+    <title>Patinhas Felizes | Pet Shop</title>
+
+    <!-- fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- topo da página -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#inicio" class="header__logo">
+                <i class="fa-solid fa-paw"></i>
+                <span>Patinhas <strong>Felizes</strong></span>
+            </a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="#inicio" class="nav__link">Início</a></li>
+                    <li><a href="#sobre" class="nav__link">Sobre</a></li>
+                    <li><a href="#servicos" class="nav__link">Serviços</a></li>
+                    <li><a href="#contato" class="nav__link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <button class="nav__toggle" id="navToggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- seção de destaque (hero) -->
+        <section class="hero" id="inicio">
+            <div class="hero__shape hero__shape--1"></div>
+            <div class="hero__shape hero__shape--2"></div>
+
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <span class="hero__badge">
+                        <i class="fa-solid fa-heart"></i>
+                        Pet shop em Florianópolis
+                    </span>
+                    <h1 class="hero__title">
+                        Cuidamos do seu pet com <span class="hero__title--accent">todo carinho</span>
+                    </h1>
+                    <p class="hero__description">
+                        Banho, tosa, veterinário e tudo o que o seu bichinho precisa em um lugar só.
+                        A nossa equipe ama o que faz e atende cada pet como se fosse da família.
+                    </p>
+                    <div class="hero__cta">
+                        <a href="#contato" class="btn btn--primary">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            Agendar agora
+                        </a>
+                        <a href="#servicos" class="btn btn--secondary">
+                            Ver serviços
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero__image-wrap">
+                    <div class="hero__circle"></div>
+                    <!-- desenho do cachorrinho em SVG -->
+                    <div class="hero__pet">
+                        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="200" cy="280" rx="140" ry="90" fill="#f4a261"/>
+                            <circle cx="200" cy="170" r="110" fill="#f4a261"/>
+                            <ellipse cx="120" cy="120" rx="35" ry="65" fill="#c97e3f" transform="rotate(-25 120 120)"/>
+                            <ellipse cx="280" cy="120" rx="35" ry="65" fill="#c97e3f" transform="rotate(25 280 120)"/>
+                            <ellipse cx="200" cy="210" rx="60" ry="45" fill="#fde7c8"/>
+                            <ellipse cx="200" cy="190" rx="14" ry="11" fill="#2b2b2b"/>
+                            <circle cx="165" cy="155" r="12" fill="#2b2b2b"/>
+                            <circle cx="235" cy="155" r="12" fill="#2b2b2b"/>
+                            <circle cx="168" cy="151" r="4" fill="#fff"/>
+                            <circle cx="238" cy="151" r="4" fill="#fff"/>
+                            <path d="M 200 205 Q 180 235 165 225" stroke="#2b2b2b" stroke-width="4" fill="none" stroke-linecap="round"/>
+                            <path d="M 200 205 Q 220 235 235 225" stroke="#2b2b2b" stroke-width="4" fill="none" stroke-linecap="round"/>
+                            <ellipse cx="200" cy="230" rx="10" ry="8" fill="#ff7a8a"/>
+                            <circle cx="140" cy="195" r="14" fill="#ffb3b3" opacity="0.6"/>
+                            <circle cx="260" cy="195" r="14" fill="#ffb3b3" opacity="0.6"/>
+                        </svg>
+                    </div>
+                    <!-- cards flutuando em volta do desenho -->
+                    <div class="hero__floating hero__floating--1">
+                        <i class="fa-solid fa-shield-heart"></i>
+                        <div>
+                            <strong>100% seguro</strong>
+                            <span>Equipe certificada</span>
+                        </div>
+                    </div>
+                    <div class="hero__floating hero__floating--2">
+                        <i class="fa-solid fa-star"></i>
+                        <div>
+                            <strong>4.9/5</strong>
+                            <span>+800 avaliações</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- seção sobre -->
+        <section class="about" id="sobre">
+            <div class="container">
+                <div class="about__grid">
+                    <div class="about__content">
+                        <span class="section__tag">Sobre nós</span>
+                        <h2 class="section__title">Mais de 10 anos cuidando de pets</h2>
+                        <p class="about__text">
+                            A <strong>Patinhas Felizes</strong> começou em 2013, em Florianópolis, com uma ideia
+                            bem simples: cuidar dos bichinhos de um jeito mais carinhoso. No começo era só uma
+                            sala de banho e tosa, mas com muita vontade de fazer diferente.
+                        </p>
+                        <p class="about__text">
+                            Hoje a gente é um pet shop completo, com clínica veterinária, lojinha de produtos
+                            e uma equipe que ama animais. O nosso objetivo é fazer com que cada visita seja
+                            tranquila e gostosa, tanto para o pet quanto para o dono.
+                        </p>
+                        <a href="#contato" class="btn btn--primary">
+                            Fale com a gente
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="about__stats">
+                        <div class="stat">
+                            <i class="fa-solid fa-paw"></i>
+                            <strong class="stat__number" data-count="12000">0</strong>
+                            <span class="stat__label">Pets atendidos</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <strong class="stat__number" data-count="12">0</strong>
+                            <span class="stat__label">Anos de experiência</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fa-solid fa-user-doctor"></i>
+                            <strong class="stat__number" data-count="15">0</strong>
+                            <span class="stat__label">Profissionais</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fa-solid fa-face-smile"></i>
+                            <strong class="stat__number" data-count="98">0</strong>
+                            <span class="stat__label">% de satisfação</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- seção de serviços -->
+        <section class="services" id="servicos">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__tag">Nossos serviços</span>
+                    <h2 class="section__title">Tudo que o seu pet precisa</h2>
+                    <p class="section__subtitle">
+                        A gente cuida de cada detalhe pra deixar o seu bichinho feliz e saudável.
+                    </p>
+                </div>
+
+                <div class="services__grid">
+                    <article class="service-card">
+                        <div class="service-card__icon service-card__icon--blue">
+                            <i class="fa-solid fa-bath"></i>
+                        </div>
+                        <h3 class="service-card__title">Banho e Tosa</h3>
+                        <p class="service-card__text">
+                            Produtos que não fazem mal pra pele, ambiente bem cuidado e profissionais
+                            que sabem deixar o seu pet bem cheirosinho.
+                        </p>
+                        <span class="service-card__price">A partir de R$ 60</span>
+                    </article>
+
+                    <article class="service-card service-card--highlight">
+                        <span class="service-card__badge">Mais pedido</span>
+                        <div class="service-card__icon service-card__icon--orange">
+                            <i class="fa-solid fa-stethoscope"></i>
+                        </div>
+                        <h3 class="service-card__title">Veterinário</h3>
+                        <p class="service-card__text">
+                            Consultas, vacinas, exames e o que mais precisar pra cuidar da saúde
+                            do seu pet do jeito certo.
+                        </p>
+                        <span class="service-card__price">A partir de R$ 120</span>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-card__icon service-card__icon--green">
+                            <i class="fa-solid fa-bone"></i>
+                        </div>
+                        <h3 class="service-card__title">Loja Pet</h3>
+                        <p class="service-card__text">
+                            Ração de qualidade, brinquedos, coleiras, caminhas e tudo aquilo que
+                            o seu bichinho merece pra ficar confortável.
+                        </p>
+                        <span class="service-card__price">Várias opções</span>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-card__icon service-card__icon--pink">
+                            <i class="fa-solid fa-scissors"></i>
+                        </div>
+                        <h3 class="service-card__title">Tosa Higiênica</h3>
+                        <p class="service-card__text">
+                            Tosa rapidinha e bem feita, respeitando o tempo do seu pet pra que ele
+                            fique tranquilo durante o serviço.
+                        </p>
+                        <span class="service-card__price">A partir de R$ 45</span>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-card__icon service-card__icon--purple">
+                            <i class="fa-solid fa-syringe"></i>
+                        </div>
+                        <h3 class="service-card__title">Vacinação</h3>
+                        <p class="service-card__text">
+                            Calendário de vacinas em dia, com produtos guardados do jeito certo
+                            e aplicados por veterinários.
+                        </p>
+                        <span class="service-card__price">A partir de R$ 80</span>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-card__icon service-card__icon--yellow">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                        <h3 class="service-card__title">Tele-Entrega</h3>
+                        <p class="service-card__text">
+                            Levamos ração, remédios e produtos na sua casa, em toda a região
+                            de Florianópolis e arredores.
+                        </p>
+                        <span class="service-card__price">Frete grátis acima de R$ 150</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- seção de contato -->
+        <section class="contact" id="contato">
+            <div class="container">
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <span class="section__tag">Fale com a gente</span>
+                        <h2 class="section__title">Vamos cuidar do seu pet?</h2>
+                        <p class="contact__text">
+                            É só preencher o formulário aqui do lado que a gente entra em contato
+                            pra marcar o atendimento. Você também pode falar com a gente assim:
+                        </p>
+
+                        <ul class="contact__list">
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <strong>Endereço</strong>
+                                    <span>Rua dos Pets, 365 — Trindade, Florianópolis/SC</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <strong>Telefone</strong>
+                                    <span>(48) 3333-4444</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <strong>E-mail</strong>
+                                    <span>contato@patinhasfelizes.com.br</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-clock"></i>
+                                <div>
+                                    <strong>Horário</strong>
+                                    <span>Seg a Sáb — 8h às 19h</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="contact__social">
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                    </div>
+
+                    <form class="form" id="contactForm" novalidate>
+                        <h3 class="form__title">Pedir atendimento</h3>
+
+                        <div class="form__group">
+                            <label for="nome" class="form__label">Nome completo *</label>
+                            <input type="text" id="nome" name="nome" class="form__input" placeholder="Digite seu nome" required>
+                            <span class="form__error" data-error-for="nome"></span>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="email" class="form__label">E-mail *</label>
+                            <input type="email" id="email" name="email" class="form__input" placeholder="seu@email.com" required>
+                            <span class="form__error" data-error-for="email"></span>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="telefone" class="form__label">Telefone *</label>
+                            <input type="tel" id="telefone" name="telefone" class="form__input" placeholder="(48) 99999-9999" required>
+                            <span class="form__error" data-error-for="telefone"></span>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="servico" class="form__label">Qual serviço?</label>
+                            <select id="servico" name="servico" class="form__input">
+                                <option value="">Escolha uma opção</option>
+                                <option value="banho">Banho e Tosa</option>
+                                <option value="consulta">Veterinário</option>
+                                <option value="loja">Loja Pet</option>
+                                <option value="vacina">Vacinação</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="mensagem" class="form__label">Mensagem *</label>
+                            <textarea id="mensagem" name="mensagem" class="form__input" rows="4" placeholder="Conte um pouco sobre o seu pet" required></textarea>
+                            <span class="form__error" data-error-for="mensagem"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--full">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Enviar
+                        </button>
+
+                        <div class="form__feedback" id="formFeedback"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- rodapé -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__brand">
+                <a href="#inicio" class="header__logo">
+                    <i class="fa-solid fa-paw"></i>
+                    <span>Patinhas <strong>Felizes</strong></span>
+                </a>
+                <p>Cuidando de quem faz parte da família, com muito amor.</p>
+            </div>
+            <div class="footer__col">
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Contato</h4>
+                <ul>
+                    <li>(48) 3333-4444</li>
+                    <li>contato@patinhasfelizes.com.br</li>
+                    <li>Trindade — Florianópolis/SC</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; <span id="year"></span> Patinhas Felizes. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- botão do whatsapp -->
+    <a href="#" class="whatsapp-float" aria-label="Falar no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
