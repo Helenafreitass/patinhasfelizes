@@ -117,8 +117,3 @@ Para garantir o funcionamento perfeito de fontes e ícones externos, é recomend
 **Fontes:** Fredoka (títulos) + Nunito (corpo do texto), ambas via Google Fonts.
 
 ---
-
-
-## 📄 Licença
-
-Projeto de uso educacional, desenvolvido exclusivamente para fins de avaliação no programa SCTEC.
